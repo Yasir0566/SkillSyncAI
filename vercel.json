@@ -1,7 +1,3 @@
 {
-  "rewrites": [
-    { "source": "/styles.css", "destination": "/web/styles.css" },
-    { "source": "/app.js", "destination": "/web/app.js" },
-    { "source": "/", "destination": "/web/index.html" }
-  ]
+  "outputDirectory": "web"
 }
