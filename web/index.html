@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SKillSync AI - an intelligent guide to Skillsync training and opportunities." />
+  <title>SKillSync AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <main class="chat-app">
+    <header class="chat-header">
+      <a class="brand" href="#top" aria-label="SKillSync AI home">
+        <span class="brand-mark"><span></span><span></span><span></span></span>
+        <span><strong>SKillSync <em>AI</em></strong><small>Your Skillsync assistant</small></span>
+      </a>
+      <div class="header-status"><i></i> Online <button class="icon-button" type="button" aria-label="Toggle appearance" title="Toggle appearance" id="themeButton"><i data-lucide="sun-moon"></i></button></div>
+    </header>
+
+    <section class="chat-stage" id="top" aria-label="Skillsync AI chat">
+      <div class="welcome">
+        <div class="welcome-mark"><i data-lucide="sparkles"></i></div>
+        <p class="eyebrow">SKILLSYNC AI</p>
+        <h1>How can I help?</h1>
+        <p>Ask me anything about Skillsync, its learning programs, practical projects, or the skillIT connection.</p>
+      </div>
+      <section class="chat-panel" aria-label="Skillsync AI assistant">
+        <div class="suggestion-row" aria-label="Suggested questions">
+          <button class="suggestion" type="button" data-question="What is Skillsync?"><i data-lucide="info"></i> What is Skillsync?</button>
+          <button class="suggestion" type="button" data-question="What technical skills can I learn?"><i data-lucide="route"></i> Explore skills</button>
+          <button class="suggestion" type="button" data-question="What kind of projects do students build?"><i data-lucide="folder-kanban"></i> See project work</button>
+          <button class="suggestion" type="button" data-question="How does the skillIT connection work?"><i data-lucide="arrow-up-right"></i> Find opportunities</button>
+        </div>
+        <div class="conversation" id="conversation" aria-live="polite">
+          <article class="message assistant-message">
+            <div class="message-avatar">SS</div>
+            <div><span class="message-label">SKillSync AI</span><p>Welcome. I can help you understand the Skillsync learning journey, from AI workflows and automation to hands-on projects and the skillIT connection.</p></div>
+          </article>
+        </div>
+        <form class="composer" id="composer">
+          <label class="sr-only" for="questionInput">Ask a question about Skillsync</label>
+          <textarea id="questionInput" rows="1" placeholder="Ask about Skillsync..." autocomplete="off"></textarea>
+          <div class="composer-actions"><span class="composer-hint">Answers are based on Skillsync information</span><button class="send-button" type="submit" aria-label="Send question" title="Send question"><i data-lucide="arrow-up"></i></button></div>
+        </form>
+      </section>
+    </section>
+    <footer><span>SKillSync AI</span><span>Grounded in Skillsync information</span></footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
