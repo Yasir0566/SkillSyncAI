@@ -1,5 +1,8 @@
 *.py
+api/chat.py
 requirements.txt
+pyproject.toml
+.python-version
 .env
 __pycache__/
 logs/
