@@ -6,7 +6,7 @@ const systemPrompt = `You are a concise, helpful assistant for Skillsync. Answer
 
 module.exports = async function handler(request, response) {
   if (request.method === "GET") {
-    return response.status(405).json({ error: "Use POST /api/chat to send a message." });
+    return response.redirect(302, "/");
   }
 
   if (request.method !== "POST") {
