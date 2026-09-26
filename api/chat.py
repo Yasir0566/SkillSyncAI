@@ -19,6 +19,9 @@ class handler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(response)
 
+    def do_GET(self):
+        self._send_json(405, {"error": "Use POST /api/chat to send a message."})
+
     def do_POST(self):
         try:
             content_length = int(self.headers.get("Content-Length", "0"))
